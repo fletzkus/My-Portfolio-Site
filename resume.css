@@ -1,0 +1,49 @@
+img {
+  max-width: 120px;
+  margin-right: 20px;
+}
+body {
+  background-color: transparent;
+  font-family: 'Montserrat', sans-serif;
+
+}
+#resume, #skills { /* same as main */
+  margin: 40px 30px;
+  width: 95%;
+}
+.row {
+  margin-bottom: 50px;
+}
+.title {
+  font-family: 'Courier Prime', monospace;
+  /* font-family: 'Cutive Mono', monospace; */
+}
+.institution {
+  /* font-family: monospace; */
+  font-size: 1.3em;
+}
+.description {
+  margin-left: 35px;
+}
+.description p {
+  margin: 0px 0px 5px 5px;
+}
+.position {
+  margin-left: 20px;
+}
+.skill-tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.tag {
+  background-color: hsla(0, 100%, 100%, 1);
+  /* border: 3px solid white; */
+  border-radius: 7px;
+  padding: 8px 20px;
+  margin: 8px 15px 10px 0px;
+}
+
+#skills .title {
+  font-size: 1.3em;
+}

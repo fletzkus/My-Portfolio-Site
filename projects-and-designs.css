@@ -1,0 +1,79 @@
+.red {
+  background-color: #E14154;
+}
+.green {
+  background-color: hsl(176,63%,33%);
+}
+.purple {
+  background-color: #3B3094;
+}
+.yellow {
+  background-color: #FFC000;
+}
+h3 {
+font-size: 55px;
+}
+
+.grid-item {
+  width: 320px;
+  margin-bottom: 30px;
+}
+
+/* #b2 {
+  margin-bottom: 40px;
+} */
+
+.col {
+  padding: 0px;
+  text-align: center;
+}
+
+.box {
+  margin-left: 0px;
+}
+.app-icon-section {
+  height: 230px;
+  padding-top: 20px;
+}
+.tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0px 10px;
+  margin-bottom: 0px;
+}
+.tag {
+  background-color: white;
+  border-radius: 7px;
+  padding: 6px 15px;
+  margin: 8px 15px 10px 0px;
+}
+.app-icon {
+  width: 150px;
+  display: inline-block;
+}
+.box:hover {
+  cursor: pointer;
+}
+.box:hover .text-section {
+  background-color: hsla(0, 0%, 100%, 0.8);
+  transition: 0.3s;
+}
+.text-section {
+  background-color: white;
+  padding: 15px;
+  padding-bottom: 10px;
+}
+
+.text-section .title {
+  position: relative;
+  font-size: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.text-section p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: left;
+}

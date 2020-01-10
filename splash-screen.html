@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Splash Screen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/75dcdedcfd.js" crossorigin="anonymous"></script>
+    <link href="splash-screen.css" type="text/css" rel="stylesheet"/>
+    <link href="projects-and-designs.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700|Cutive+Mono|Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body id="body" onscroll="scroll()">
+
+    <!-- intro/title panel -->
+    <canvas id="title-panel" class="panel"></canvas>
+     <div class="title" id="title">
+      <h1 id="h1"><strong>Faith Letzkus</strong></h1>
+      <h2 id="h2">Software Engineer</h2>
+    </div>
+
+    <!-- sidebar -->
+    <div id="sidebar">
+      <div class="name"><strong>Faith Letzkus</strong></div>
+      <div id="sidebar-content-and-scrollbar">
+
+        <div id="sidebar-content">
+          <div id="nav">
+            <a class="nav-item" href="#about-panel">About</a>
+            <a class="nav-item" href="#resume-panel">Resume</a>
+            <a class="nav-item" href="#contact-panel">Contact</a>
+            <a class="nav-item" href="#projects-panel">Projects</a>
+            <a class="nav-item" href="#designs-panel">Designs</a>
+          </div>
+          <div class="icons" id="sidebar-icons">
+            <a href="https://www.linkedin.com/in/faith-letzkus/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/faithletzkus"><i class="fab fa-github"></i></a>
+            <a href=mailto:fletzkus@wustl.edu><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div id="scrollbar"></div>
+      </div>
+    </div>
+
+    <!-- about-panel -->
+    <div class="panel" id="about-panel">
+      <div class="squiggle">
+        <svg viewBox="0 0 500 37" preserveAspectRatio="xMinYMin meet">
+          <path d="
+                  M 0,25
+                  C 80,25 180,10 280,30
+                  S 400,20 500,25
+                  L 500,00
+                  L 0,0 Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="holder">
+        <div class="sample-sidebar"></div>
+
+        <div class="container main" id="about"> <!--class container -->
+          <div class="row">
+            <div class="col transparent" id="about-text">
+                <div class="sub" id="hi-im-faith">
+                  <h4>Hi, I'm Faith</h4>
+                  I am a current student at Washington University in St. Louis studying
+                  Computer Science with minors in Business and Design.
+                  With a 3.95 GPA and Dean’s List distinction,
+                  I am passionate about academic excellence in Computer Science as well as
+                  my studies in Business and Design that give me a well-rounded perspective.
+                </div>
+                <div class="sub" id="about-this-site">
+                  <h4>About this Site</h4>
+                  This is my personal webiste, created to show of my abilities and learn some new technologies.
+                  I made this site with ReactJS, and Sass which I compiled using gulp.
+                  The site was designed and built by me. YEE!
+                </div>
+            </div>
+            <div class="col-" id="about-face">
+              <div class="mini-container">
+                <div class="transparent"></div>
+                <div id="img-and-icons">
+                  <img src="HeadShot.png" alt="Faith Letzkus's Head Shot">
+                  <div class="icons" id="about-icons">
+                    <a href="https://www.linkedin.com/in/faith-letzkus/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/faithletzkus"><i class="fab fa-github"></i></a>
+                    <a href=mailto:fletzkus@wustl.edu><i class="fas fa-envelope"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel" id="resume-panel">
+      <div class="squiggle">
+        <svg viewBox="0 0 500 37" preserveAspectRatio="xMinYMin meet">
+          <path id="resume-path" d="
+                  M 0,25
+                  C 80,25 180,10 280,30
+                  S 400,20 500,25
+                  L 500,00
+                  L 0,0 Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="holder">
+        <div class="sample-sidebar"></div>
+
+        <div class="container main transparent" id="resume">
+          <div class="row" id="resume-header">
+            <div class="col header-item" id="education" onclick="changeFrame(this)"><strong>Education</strong></div>
+            <div class="col header-item" id="skills" onclick="changeFrame(this)"><strong>Skills</strong></div>
+            <div class="col header-item" id="experience" onclick="changeFrame(this)"><strong>Experience</strong></div>
+            <div class="col header-item" id="leadership-and-service" onclick="changeFrame(this)"><strong>Organizations</strong></div>
+            <div class="col header-item" id="pdf"><a href="Assets/ResumeTrial_purple.pdf"><strong>PDF</strong></a></div>
+
+          </div>
+          <div class="row" id="resume-body">
+            <div class="col" id="contact-text">
+              <iframe id="iframe" src="education.html" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel" id="contact-panel">
+      <div class="squiggle">
+        <svg viewBox="0 0 500 37" preserveAspectRatio="xMinYMin meet">
+          <path d="
+                  M 0,25
+                  C 80,25 180,10 280,30
+                  S 400,20 500,25
+                  L 500,00
+                  L 0,0 Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="holder">
+        <div class="sample-sidebar"></div>
+
+        <div class="container main" id="contact">
+          <div class="row">
+            <div class="col transparent" id="contact-text">
+              <h3>Contact</h3>
+              <div class="sub" id="icons-and-links"> <!-- displayflex here and icons and links display flex column-->
+                <div class="icon-and-link">
+                  <a href="https://www.linkedin.com/in/faith-letzkus/"><i class="fab fa-linkedin"></i></a>
+                  <a class="link" href="https://www.linkedin.com/in/faith-letzkus/">www.linkedin.com/in/faith-letzkus</a>
+                </div>
+                <div class="icon-and-link">
+                  <a href="https://github.com/faithletzkus"><i class="fab fa-github"></i></a>
+                  <a class="link" href="https://github.com/faithletzkus">github.com/faithletzkus</a>
+                </div>
+                <div class="icon-and-link">
+                  <a href=mailto:fletzkus@wustl.edu><i class="fas fa-envelope"></i></a>
+                  <a class="link" href=mailto:fletzkus@wustl.edu>fletzkus@wustl.edu</a>
+                </div>
+                <!-- <div class="icons" id="sidebar-icons">
+                  <a href="https://www.linkedin.com/in/faith-letzkus/"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/faithletzkus"><i class="fab fa-github"></i></a>
+                  <a href=mailto:fletzkus@wustl.edu><i class="fas fa-envelope"></i></a>
+                </div> -->
+                <!-- <div id="links">
+                  <a href="https://www.linkedin.com/in/faith-letzkus/">www.linkedin.com/in/faith-letzkus</a>
+                  <a href="https://github.com/faithletzkus">github.com/faithletzkus</a>
+                  <a href=mailto:fletzkus@wustl.edu>fletzkus@wustl.edu</a>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="panel-long" id="projects-panel">
+      <svg viewBox="0 0 500 37" preserveAspectRatio="xMinYMin meet">
+        <path id="projects-path" d="
+                M 0,25
+                C 80,25 180,10 280,30
+                S 400,20 500,25
+                L 500,00
+                L 0,0 Z"
+        ></path>
+      </svg>
+      <div class="holder">
+        <div class="sample-sidebar"></div>
+
+        <div class="container main" id="projects">
+          <div class="header"><h3><strong>Projects</strong></h3></div>
+          <div class="grid">
+
+            <div class="grid-item" id="proj1">
+              <div class="box green">
+                <div class="tags">
+                  <div class="tag">Swift</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/PalgorithmsIcon.png" alt="Palgorithms Icon">
+                </div>
+                <div class="text-section" onclick="window.location.href = 'https://w3docs.com';">
+                  <h4 class="title"><strong>Palgorithms</strong></h4>
+                  <div class="date"><em>November 2019</em></div>
+                  <p class="description">Teaching Supplement App to learn for about
+                    data structures and algorithms</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item" id="proj2">
+              <div class="box red">
+                <div class="tags">
+                  <div class="tag">HTML</div>
+                  <div class="tag">CSS</div>
+                  <div class="tag">JavaScript</div>
+                  <div class="tag">jQuery</div>
+                  <div class="tag">Bootstrap</div>
+                </div>
+
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/Home.png" alt="Home Icon (my home page)">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>This Site</strong></h4>
+                  <div class="date"><em>November 2019</em></div>
+                  <p class="description">My portfolio site...This includes more on why I built this site, problems I ran into, features, and wireframes</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item" id="proj3">
+              <div class="box purple">
+                <div class="tags">
+                  <div class="tag">C++</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/file.png" alt="File System Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>File System</strong></h4>
+                  <div class="date"><em>December 2019</em></div>
+                  <p class="description">Software simulation of a file system.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="grid-item" id="proj4">
+              <div class="box purple">
+                <div class="tags">
+                  <div class="tag">Swift</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/SlingHealth.png" alt="Health Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Sling Health</strong></h4>
+                  <div class="date"><em>December 2019 - Present</em></div>
+                  <p class="description">Health App partnering with SLing Health</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="grid-item" id="proj5">
+              <div class="box green">
+                <div class="tags">
+                  <div class="tag">Java</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/SantaHat.png" alt="Secret Santa Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Secret Santa</strong></h4>
+                  <div class="date"><em>November 2019</em></div>
+                  <p class="description">This program allows the users
+                    to play the classic game of Secret Santa.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item" id="proj6">
+              <div class="box yellow" id="Secret-Santa-Web">
+                <div class="tags">
+                  <div class="tag">HTML</div>
+                  <div class="tag">CSS</div>
+                  <div class="tag">JavaScript</div>
+                </div>
+
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/SantaHat.png" alt="Secret Santa Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Secret Santa (Web Edition)</strong></h4>
+                  <div class="date"><em>November 2019</em></div>
+                  <p class="description">This program allows the users
+                    to create a list of participants, generates Santa-Human
+                    pairs for each participant, and lets the users see the
+                    outcomes secretively.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item" id="proj7">
+              <div class="box yellow">
+                <div class="tags">
+                  <div class="tag">C++</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/TicTacToe.png" alt="Tic-Tac-Toe and Gomoku Icon">
+                </div>
+                <div class="text-section" onclick="window.location.href = 'tic-tac-toe-and-gomoku.html';">
+                  <h4 class="title"><strong>Tic-Tac-Toe and Gomoku</strong></h4>
+                  <div class="date"><em>October 2019</em></div>
+                  <p class="description">Game application</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item" id="proj8">
+              <div class="box purple">
+                <div class="tags">
+                  <div class="tag">Swift</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/LayersPen.png" alt="Layers Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Layers</strong></h4>
+                  <div class="date"><em>October 2019</em></div>
+                  <p class="description">Drawing App created for Mobile App Devlopment</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item" id="proj9">
+              <div class="box red">
+                <div class="tags">
+                  <div class="tag">Swift</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/Dog.png" alt="Pets Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Pets</strong></h4>
+                  <div class="date"><em>September 2019</em></div>
+                  <p class="description">Clicker Pet App developed to learn auto layouts in Swift</p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="panel-long" id="designs-panel">
+      <svg viewBox="0 0 500 37" preserveAspectRatio="xMinYMin meet">
+        <path id="top" d="
+                M 0,25
+                C 80,25 180,10 280,30
+                S 400,20 500,25
+                L 500,00
+                L 0,0 Z"
+        ></path>
+      </svg>
+
+      <div class="holder">
+        <div class="sample-sidebar"></div>
+
+        <div class="container main" id="projects">
+          <div class="header"><h3><strong>Designs</strong></h3></div>
+          <div class="grid">
+
+            <div class="grid-item" id="des1">
+              <div class="box green">
+                <div class="tags">
+                  <div class="tag">PowerPoint</div>
+                </div>
+                <div class="app-icon-section">
+                  <img id="AppUIIcon" class="app-icon" src="Assets/App-Icons/Web.png" alt="Web UIs Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Web Storyboards</strong></h4>
+                  <p class="description">This Site</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item" id="des2">
+              <div class="box green">
+                <div class="tags">
+                  <div class="tag">PowerPoint</div>
+                </div>
+                <div class="app-icon-section">
+                  <img id="AppUIIcon" class="app-icon" src="Assets/App-Icons/Web.png" alt="Web UIs Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Web Storyboards</strong></h4>
+                  <p class="description">Secret Santa</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item" id="des3">
+              <div class="box purple">
+                <div class="tags">
+                  <div class="tag">PowerPoint</div>
+                </div>
+
+                <div class="app-icon-section">
+                  <img id="AppUIIcon" class="app-icon" src="Assets/App-Icons/AppUIs.png" alt="App UIs Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>App Wireframes</strong></h4>
+                  <p class="description">Palgorithms</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="grid-item" id="des4">
+              <div class="box yellow">
+                <div class="tags">
+                  <div class="tag">Adobe After Effects</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/AfterEffects.png" alt="Video Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Kinetic Typography</strong></h4>
+                  <p class="description">Video...</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="grid-item" id="des5">
+              <div class="box purple">
+                <div class="tags">
+                  <div class="tag">InDesign</div>
+                  <div class="tag">PowerPoint</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/Spread.png" alt="Spreads Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Spreads</strong></h4>
+                  <p class="description">Resume and Cover Letter Designs</p>
+                  <p class="description">Short Story Spread</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="grid-item" id="des6">
+              <div class="box red">
+                <div class="tags">
+                  <div class="tag">Illustrator</div>
+                  <div class="tag">PowerPoint</div>
+                </div>
+                <div class="app-icon-section">
+                  <img class="app-icon" src="Assets/App-Icons/Plaid.png" alt="Patterns Icon">
+                </div>
+                <div class="text-section">
+                  <h4 class="title"><strong>Patterns</strong></h4>
+                  <p class="description">LinkedIn Backdrop</p>
+                  <p class="description">Product Design</p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="under-footer">
+
+    </div>
+    <div id="footer">
+      <svg id="footer-path" viewBox="0 20 500 120" preserveAspectRatio="xMinYMin meet">
+        <path id="bottom" d="
+                M 0,50
+                C 10,50 175,0 250,30
+                S 400,60 500,40
+                L 500,175
+                L 0,175 Z"
+        ></path>
+      </svg>
+      <div id="footer-text">
+        Designed and Built by
+        <div class="name"><strong>Faith Letzkus</strong></div>
+      </div>
+      <div id="footer-date">
+        Last Updated: 1/10/2020
+      </div>
+      <div class="icons" id="footer-icons">
+        <a href="https://www.linkedin.com/in/faith-letzkus/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/faithletzkus"><i class="fab fa-github"></i></a>
+        <a href=mailto:fletzkus@wustl.edu><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+    <script src="splash-screen.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+      <script src="gallery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>

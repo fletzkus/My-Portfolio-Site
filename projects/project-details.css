@@ -1,0 +1,63 @@
+.red {
+  background-color: #E14154;
+}
+.green {
+  background-color: hsl(176,63%,33%);
+}
+.purple {
+  background-color: #3B3094;
+}
+.yellow {
+  background-color: #FFC000;
+}
+body {
+  background-color: #FFE8A3;
+  margin: 0px 15%;
+}
+strong {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: 'Cutive Mono', monospace;
+}
+@media (max-width: 992px) {
+  body {
+    margin: 0px 0px;
+  }
+}
+
+.icon-img {
+  width: 65px;
+  margin-top: 25px;
+}
+.circle {
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid white 15px;
+  text-align: center;
+}
+.container {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 40px;
+}
+.box {
+  text-align: left;
+  display: inline-block;
+  border-radius: 20px;
+  background-color: white;
+  padding: 15px 30px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  margin-bottom:15px;
+}
+.box strong {
+  font-size: 18px;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: black;
+}

@@ -7,16 +7,16 @@
 var changeFrame = function(param) {
   var frame = document.getElementById('iframe');
   if (param.innerHTML === '<strong>Education</strong>') {
-    frame.src = 'education.html';
+    frame.src = 'Resume/education.html';
   }
   else if (param.innerHTML === '<strong>Skills</strong>') {
-    frame.src = 'skills.html';
+    frame.src = 'Resume/skills.html';
   }
   else if (param.innerHTML === '<strong>Experience</strong>') {
-    frame.src = 'experience.html';
+    frame.src = 'Resume/experience.html';
   }
   else {
-    frame.src = 'leadership-and-service.html';
+    frame.src = 'Resume/leadership-and-service.html';
   }
 };
 

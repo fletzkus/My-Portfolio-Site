@@ -85,12 +85,12 @@ a {
 a:hover {
   color: hsl(176,63%,33%);
 }
-.wireframes img {
+.wireframes img, .images img {
   display: inline-block;
   width: 100%;
   margin-top: 15px;
 }
-#palgorithms .wireframes img {
+#palgorithms .wireframes img, #layers .images img{
   width: auto;
   height: 550px;
 }

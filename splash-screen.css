@@ -13,6 +13,7 @@ body::-webkit-scrollbar {
   left: 0;
   width: 100vw;
   height: 100vh;
+  background-color: #E14154;
   /* expect not if it is any less than 600px */
 }
 .panel {
@@ -43,17 +44,26 @@ body {
 }
 h1, h2 {
   position: absolute;
-  color: black;
+  color: white;
 }
 h1 {
   font-size: 6em;
   margin-top: -20px;
 }
 h2 {
-  padding-top: 70px;
+  padding-top: 90px;
   font-size: 2em;
   letter-spacing: 10px;
 }
+@media (max-width: 755px) {
+  h2 {
+    padding-top: 200px;
+  }
+
+}
+
+
+
 .title {
   text-align: center;
   transition: 0.4s;
@@ -537,7 +547,7 @@ width: 100%;
 } */
 #sidebar .name {
   background-color: white;
-  width: 175px;
+  width: 180px;
   padding: 22px 10px 22px 15px;
   font-size: 18px;
   font-style: bold;

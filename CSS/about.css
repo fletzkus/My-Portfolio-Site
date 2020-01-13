@@ -1,0 +1,80 @@
+/* about.css */
+#about {
+  margin-top: 60px;
+  padding: 0px 100px;
+  color: white;
+}
+#about #about-text {
+  text-align: left;
+  padding: 40px 0px;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+#about-text a {
+  color: var(--yellow);
+}
+#about .sub {
+  margin: 30px;
+}
+#about img {
+  width: 280px;
+}
+#about #about-face {
+  margin-left: 2%;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding: 0px;
+}
+#about .mini-container {
+  display: flex;
+  align-items: center;
+  height: 95%;
+  width: 320px;
+}
+#about #about-face .transparent {
+  box-sizing: border-box;
+  background-color: hsla(360, 100%, 100%, 0.3);
+  position: absolute;
+  height: 340px;
+  margin-top: 40px;
+  padding-bottom: 50px;
+  width: 320px;
+}
+#about #about-face #img-and-icons {
+  position: absolute;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+/* If screen width is 1070px or less */
+@media (max-width: 1070px) {
+  #about-face {
+    visibility: hidden;
+    position: absolute;
+  }
+  .mini-container {
+    visibility: hidden;
+  }
+}
+/* If screen width is 1200px or less */
+@media (max-width: 1200px) {
+  #about{
+    margin-top: 20px;
+  }
+
+}
+
+#about .icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#about i {
+  color: hsla(0,100%,100%, 0.6);
+  font-size: 3em;
+}
+
+#about i:hover {
+  color: white;
+  transition: 0.5s;
+}

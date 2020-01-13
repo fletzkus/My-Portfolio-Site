@@ -1,0 +1,27 @@
+/* paths.css */
+svg  {
+  position: absolute;
+}
+#about-panel path {
+  fill: var(--red);
+}
+#resume-panel path {
+  fill: var(--green);
+}
+#contact-panel path {
+  fill: var(--yellow);
+}
+#projects-panel path {
+  fill: var(--red);
+}
+#designs-panel #top {
+  fill: var(--gray);
+}
+#footer-path path {
+  fill: var(--red);
+  position: absolute;
+}
+.squiggle {
+  position: absolute;
+  width: 100%;
+}

@@ -1,0 +1,70 @@
+/* sidebar.css */
+#sidebar #scrollbar {
+  margin-left: 130px;
+  position: fixed;
+  height: 10px;
+  width: 20px;
+  background-color: white;
+  transition: 0.2s;
+}
+#sidebar {
+  position: absolute;
+  z-index: 10;
+  width: 175px;
+  height: 100vh;
+  font-size: 18px;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+}
+#sidebar .name {
+  background-color: white;
+  width: 180px;
+  padding: 22px 10px 22px 15px;
+  font-size: 18px;
+  font-style: bold;
+}
+#sidebar-content-and-scrollbar {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  background-color: hsla(360, 100%, 100%, 0.7);
+  height: 100%;
+}
+#sidebar-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 130px;
+  padding-left: 15px;
+
+}
+#sidebar-content a {
+  color: black;
+}
+#sidebar-content a:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+#sidebar #nav {
+  display: flex;
+  flex-direction: column;
+}
+#sidebar #nav .nav-item {
+  padding: 20px 0px;
+}
+#sidebar #sidebar-icons {
+  font-size: 1.3em;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+#sidebar i {
+  color: hsl(0, 0%, 20%);
+  margin-top: 10px;
+}
+#sidebar i:hover {
+  color: black;
+  font-size: 1.305em;
+  transition: 0.5s;
+}

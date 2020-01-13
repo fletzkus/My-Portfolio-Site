@@ -1,0 +1,38 @@
+/* resume.css */
+#resume-panel .main {
+  height: 78%;
+  z-index: 2000;
+}
+#resume-panel .transparent {
+  background-color: hsla(0, 100%, 100%, 0.3);
+}
+#resume #resume-header {
+  background-color: hsla(0, 100%, 100%, 0.5);
+  text-align: center;
+
+}
+#resume a {
+  color: black;
+}
+#resume a:hover {
+  text-decoration: none;
+}
+#resume .header-item {
+  cursor: pointer;
+  height: 100%;
+  padding: 12px 0px;
+  margin: 0px;
+  font-size: 18px;
+}
+#resume .header-item:hover {
+  background-color: white;
+  transition: 0.5s;
+}
+#resume #resume-body {
+  margin-top: 0px;
+  height: 85%;
+  padding: 0px;
+}
+#resume #resume-body .col {
+  margin: 0px;
+}

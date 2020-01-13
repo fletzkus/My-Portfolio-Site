@@ -77,6 +77,9 @@ font-size: 55px;
   margin-top: 10px;
   text-align: left;
 }
+.text-section p strong {
+  font-family: 'Montserrat', sans-serif;
+}
 a {
   color: var(--green);
 }

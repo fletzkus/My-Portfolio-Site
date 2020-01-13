@@ -4,10 +4,11 @@
     <title>This Portfolio Site</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700|Cutive+Mono|Montserrat:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,700|Cutive+Mono|Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75dcdedcfd.js" crossorigin="anonymous"></script>
     <link href="detailed.css" type="text/css" rel="stylesheet"/>
   </head>
-  <body class="light-red">
+  <body class="light-red" id="this-site">
     <a class="home" href='../index.html#projects-panel'><strong>&lt-back</strong></a>
     <div class="content">
       <div class="container">
@@ -22,40 +23,201 @@
           <strong>Github repo: </strong><a href="https://github.com/faithletzkus/My-Portfolio-Site">github.com/faithletzkus/My-Portfolio-Site</a>
         </div>
         <div class="description box">
-          <h2><strong>About This Project</strong></h2>
-          <p></p>
-
-          <h2><strong>In the Future</strong></h2>
-          <p></p>
-
-          <h2><strong>Features</strong></h2>
-          <p></p>
-
-          <h2><strong>Problems I ran Into</strong></h2>
-          <p></p>
+          <h2><strong>About This Site</strong></h2>
+          <p>This is my portfolio site! I created it to have one place where I can
+            discuss all of my projects and designs. I also wanted to create a site
+            that I can continue to improve in order to practice old skills and
+            learn new ones.</p>
+          <p>For the first iteration, I learned jQuery and Bootstrap and improved
+            my JavaScript skills. Now, I am working on the second iteration, which
+            I am building in ReactJS at faithletzkus.github.io. In the future, I want
+            to continue to make improvements to it as I gain more ideas and grow
+            as a developer.</p>
+          <h2><strong>Feature Breakdown</strong></h2>
+          <h3>Splash Screen Animation</h3>
+          <p>The Splash Screen Animation is the animation that happens once the first time the user loads the site.
+            To accomplish this I used the browser's local storage and built off of an animation done by Alex Zaworski on CodePen, which can
+            be found <a href="https://codepen.io/alexzaworski/pen/mEkvAG">here</a>.</p>
+          <h3>Animated Scroll Bar in the Side Bar</h3>
+          <p>I built this scroll bar to increase in length as you scroll down the page.
+            Every time the page is scrolled, I call scroll() which changes the bar’s
+            height to how far down the page you are / the height of the entire site.</p>
+          <h3>Animated Scroll When User Clicks Section in the Side Bar</h3>
+          <p>For this animation, I used jQuery to detect any time the user clicks a
+            section in the sidebar. If so, I used the jQuery function animate with the
+            property scrollTop. I set scrollTop’s value to the correct section’s height
+            from the top of the page. Finally, I prevented the default behavior when you
+            click a section(to jump directly to that section instead of animate) with
+            the function preventDefault().</p>
+          <h3>Curvy Line Dividers</h3>
+          <p>The cure lines that divide each section of the site are Html path
+            elements that I created myself.</p>
+          <h3>Resume Section</h3>
+          <p>For the resume section, I created Html pages for every section that I wanted,
+            then created an html iframe on the main page initially set to show the
+            first section. Whenever the clicks a different section in the resume header
+            bar, its corresponding Html page shows up in the iframe. I came up with
+            this idea and wrote it in vanilla JavaScript.</p>
+          <h3>Responsiveness</h3>
+          <p>I used <a href="https://getbootstrap.com/">Bootstrap</a> to help with responsiveness when the user grows or shrinks the
+            width of the page. I also used a <a href="https://masonry.desandro.com/">Masonry</a> grid
+            in the projects and designs section to create a responsive grid.</p>
+          <h3>Project and Design Icons</h3>
+          <p>I drew most of these icons myself in Abode Illustrator except for the icons
+            for This Site, Pets, Web Storyboards, and Patterns. This Site, Pets, and
+            Web Storyboards were icons from PowerPoint Icons, and the Patterns icon
+            was free on <a href="https://thenounproject.com">thenounproject.com</a>.</p>
+          <h3>Contact Icons</h3>
+          <p>I used <a href="https://fontawesome.com/">Font Awesome</a> for my LinkedIn, GitHub, and Email icons.</p>
 
         </div>
         <div class="wireframes box" id="wireframes">
-          <h2><strong>Storyboard</strong></h2>
-          <p>Before cerating this site, I storyboarded it in PowerPoint.</p>
-          <p>I have included some images showing the evolution of my
-            ideas that lead me to the design that I actually implemented.</p>
-          <div class="images">
-            <img src="Storyboards/Portfolio/.png" alt="">
-            <img src="Storyboards/Portfolio/.png" alt="">
-            <p>Splash Screen and App Icon</p>
-            <img src="Storyboards/Portfolio/.png" alt="">
-            <p>Home Page</p>
-            <img src="Storyboards/Portfolio/.png" alt="">
-            <p>Settings Page</p>
-            <img src="Storyboards/Portfolio/Portfolio.png" alt="">
-            <p>Build-Your-Own Page</p>
+          <div class="initial-info">
+            <h2><strong>Storyboard</strong></h2>
+            <p>Before creating this site, I storyboarded it in PowerPoint.</p>
+
+            <p>My first storyboard iteration for this site was a simple gray and white design.
+            I liked the flow it had for the site; however, I thought my color choices were not a great
+            reflection of myself or my personality. Accordinly, I took the colors I had picked out for the
+            project and design boxes and reinvented the site to what it is now.</p>
+            <p>Below I have included some images showing the evolution of my first ideas to my final
+              ideas.</p>
           </div>
+
+          <div class="images smaller-and-center" id="one">
+            <img src="Storyboards/Portfolio/Color-Pallete.png" alt="Color Pallete">
+            <p>Color Pallete</p>
+            <img src="Storyboards/Portfolio/project-collage.png" alt="Project Collage">
+            <p>Project Icon Collage</p>
+            <p>These are the original icons I drew using Adobe Illustrator.</p>
+          </div>
+
+          <div class="container">
+
+            <h3>Splash Screen</h3>
+            <div class="row" id="splash-screen">
+              <div class="col images">
+                <img src="Storyboards/Portfolio/splash-screen-og.png" alt="Original Splash Screen Design">
+              </div>
+              <div class="col- arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="col images">
+                <img src="Storyboards/Portfolio/splash-screen.png" alt="Final Splash Screen Design">
+              </div>
+            </div>
+
+            <h3>About</h3>
+            <div class="row" id="about">
+              <div class="col images">
+                <img src="Storyboards/Portfolio/about-og.png" alt="Original About Section Design">
+              </div>
+              <div class="col- arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="col images">
+                <img src="Storyboards/Portfolio/about.png" alt="Final About Section Design">
+              </div>
+            </div>
+
+            <h3>View In Between Pages</h3>
+            <div class="row" id="scroll">
+              <div class="col images">
+                <img src="Storyboards/Portfolio/scroll-og.png" alt="Original Scroll Demo">
+              </div>
+              <div class="col- arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="col images">
+                <img src="Storyboards/Portfolio/scroll.png" alt="Final Scroll Demo">
+              </div>
+            </div>
+
+            <h3>Resume - Education Tab</h3>
+            <div class="row" id="resume-education">
+              <div class="col images">
+                <img src="Storyboards/Portfolio/resume-education-og.png" alt="Original Resume Education Section Design">
+              </div>
+              <div class="col- arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="col images">
+                <img src="Storyboards/Portfolio/resume-education.png" alt="Final Resume Education Section Design">
+              </div>
+            </div>
+
+            <h3>Resume - Skills Tab</h3>
+            <div class="row" id="resume-skills">
+              <div class="col images">
+                <img src="Storyboards/Portfolio/resume-skills-og.png" alt="Original Resume Skills Section Design">
+              </div>
+              <div class="col- arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="col images">
+                <img src="Storyboards/Portfolio/resume-skills.png" alt="Final Resume Skills Section Design">
+              </div>
+            </div>
+
+            <h3>Contact</h3>
+            <div class="row" id="contact">
+              <div class="col images">
+                <img src="Storyboards/Portfolio/contact-og.png" alt="Original Contact Section Design">
+              </div>
+              <div class="col- arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="col images">
+                <img src="Storyboards/Portfolio/contact.png" alt="Final Contact Section Design">
+              </div>
+            </div>
+
+            <h3>Projects</h3>
+            <div class="row" id="projects">
+              <div class="col images">
+                <img src="Storyboards/Portfolio/projects-og.png" alt="Original Projects Section Design">
+              </div>
+              <div class="col- arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="col images">
+                <img src="Storyboards/Portfolio/projects.png" alt="Final Projects Section Design">
+              </div>
+            </div>
+
+            <h3>Footer</h3>
+            <div class="row" id="footer">
+              <div class="col images">
+                <img src="Storyboards/Portfolio/footer-og.png" alt="Original Footer Design">
+              </div>
+              <div class="col- arrow">
+                <i class="fas fa-long-arrow-alt-right"></i>
+              </div>
+              <div class="col images">
+                <img src="Storyboards/Portfolio/footer.png" alt="Final Footer Design">
+              </div>
+            </div>
+          </div>
+
+          <div class="images smaller-and-center">
+            <h3>Project/Design Description Page</h3>
+            <img src="Storyboards/Portfolio/detailed-first.png" alt="First Iteration of Project/Design Description Page">
+            <p>First Idea</p>
+            <i class="fas fa-long-arrow-alt-down"></i>
+            <img src="Storyboards/Portfolio/detailed-second.png" alt="Second Iteraton of Project/Design Description Page">
+            <p>Second Idea</p>
+            <i class="fas fa-long-arrow-alt-down"></i>
+            <img src="Storyboards/Portfolio/detailed.png" alt="Final Interation of Project/Design Description Page">
+            <p>Final Design</p>
+            <p style="text-align: left;">Although I really enjoy the look of the first two designs,
+              I knew they would cause issues with the site's responsiveness.
+               Also, I thought that a simpler design would better facilitate my goal for the Description Pages:
+               to give more focus to the project/design.</p>
+          </div>
+
         </div>
       </div>
     </div>
-
-
 
   </body>
 </html>

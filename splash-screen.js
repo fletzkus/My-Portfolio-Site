@@ -39,9 +39,9 @@ var scrollbar = document.getElementById("scrollbar");
 var maxY = window.innerHeight + window.pageYOffset + scrollbar.offsetHeight;
 var y = window.pageYOffset;// + window.innerHeight ;
 function scroll() {
-  console.log("maxy" + maxY);
-  console.log("y" + y);
-  console.log("offset height" + scrollbar.offsetHeight);
+  // console.log("maxy" + maxY);
+  // console.log("y" + y);
+  // console.log("offset height" + scrollbar.offsetHeight);
   maxY = window.innerHeight + window.pageYOffset + scrollbar.offsetHeight + 1000;
   y = window.pageYOffset;
   scrollbar.style.height = ((((y*1.0)/maxY)*100) + 5) + "%";

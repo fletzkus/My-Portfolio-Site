@@ -1,0 +1,52 @@
+* {
+  font-family: 'Cutive Mono', monospace;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* colors used throughout */
+:root {
+  --red: #E14154;
+  --green: hsl(176,63%,33%);
+  --purple: #3B3094;
+  --yellow: #FFC000;
+  --light-red: #E598A0;
+  --light-green: #7DBDB9;
+  --light-purple: #978FD4;
+  --light-yellow: #FFE8A3;
+
+  --gray: hsl(0,0%,85%);
+  --light-gray: hsl(0,0%,97%);
+
+  --transparent: hsla(0, 100%, 100%, 0.15);
+}
+
+.red {
+  background-color: var(--red);
+}
+.green {
+  background-color: var(--green);
+}
+.purple {
+  background-color: var(--purple);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.light-red {
+  background-color: var(--light-red);
+}
+.light-green {
+  background-color: var(--light-green);
+}
+.light-purple {
+  background-color: var(--light-purple);
+}
+.light-yellow {
+  background-color: var(light-yellow);
+}
+
+.transparent {
+  background-color: var(--transparent);
+}

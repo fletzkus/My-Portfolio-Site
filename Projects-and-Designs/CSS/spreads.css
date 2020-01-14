@@ -1,0 +1,6 @@
+#resume-coverletter img{
+  width: auto;
+  height: 700px;
+  border-radius: 5px;
+  border: 10px solid hsla(0, 100%, 0%, 0.2);
+}

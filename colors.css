@@ -44,7 +44,7 @@ p {
   background-color: var(--light-purple);
 }
 .light-yellow {
-  background-color: var(light-yellow);
+  background-color: var(--light-yellow);
 }
 
 .transparent {
